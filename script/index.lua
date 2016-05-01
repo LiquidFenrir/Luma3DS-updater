@@ -62,8 +62,6 @@ function main()
 			elseif Controls.check(pad,KEY_A) then
 				Screen.refresh()
 				Screen.clear(TOP_SCREEN)
-				Screen.waitVblankStart()
-				Screen.flip()
 				if Network.isWifiEnabled() then
 					Screen.debugPrint(5,5, "Downloading latest.zip...", white, TOP_SCREEN)
 					Network.downloadFile(url, zip_path)
@@ -75,7 +73,7 @@ function main()
 					Screen.debugPrint(5,65, "Deleting latest.zip...", white, TOP_SCREEN)
 					System.deleteFile(zip_path)
 					Screen.debugPrint(5,80, "Changing path for reboot patch", white, TOP_SCREEN)
-					path_changer(a9lh_path)
+					path_changer()
 					Screen.debugPrint(5,95, "Done!", white, TOP_SCREEN)
 					Screen.debugPrint(5,110, "Press START to go back to HBL/Home menu", white, TOP_SCREEN)
 					while true do
@@ -107,8 +105,6 @@ function main()
 			elseif Controls.check(pad,KEY_B) then
 				Screen.refresh()
 				Screen.clear(TOP_SCREEN)
-				Screen.waitVblankStart()
-				Screen.flip()
 				if System.doesFileExist(backup_path) then
 					Screen.debugPrint(5,5, "Deleting new arm9loaderhax.bin...", white, TOP_SCREEN)
 					System.deleteFile(a9lh_path)

@@ -1,12 +1,12 @@
 BasicInfo:
   Title                   : "Luma3DS updater"
   CompanyCode             : "00"
-  ProductCode             : "CTR-P-LUMA"
+  ProductCode             : "CTR-HB-LUMA"
   ContentType             : Application
   Logo                    : Nintendo # Nintendo / Licensed / Distributed / iQue / iQueForSystem
 
 TitleInfo:
-  UniqueId                : 0x4c7561
+  UniqueId                : 0x6862
   Category                : Application
   
 CardInfo:
