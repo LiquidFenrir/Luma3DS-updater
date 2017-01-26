@@ -1,3 +1,6 @@
+# /!\ Not maintained anymore /!\
+I would suggest using [MultiUpdater](https://github.com/LiquidFenrir/MultiUpdater) instead.
+
 # Luma3DS-updater
 Updater for Luma3DS in lpp-3ds
 
